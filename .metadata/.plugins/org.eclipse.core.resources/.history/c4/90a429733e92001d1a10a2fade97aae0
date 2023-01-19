@@ -1,0 +1,23 @@
+package com.xworkz.autowired.boot;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class HardwareShop {
+   
+	@Value("")
+	private String id;
+	@Value("5")
+	private String name;
+	@Value("Happy Service")
+	private String gstNo;
+	@Value("8523")
+	private String ownerName;
+	@Value("yashu")
+	private String address;
+	//@Value("Rajajinagar")
+	
+	public HardwareShop() {
+		System.out.println("Created using default constructor by using");
+	}
+	
+}

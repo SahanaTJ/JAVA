@@ -1,0 +1,37 @@
+package com.xworkz.autowired.boot;
+
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.xworkz.components.Bekary;
+import com.xworkz.configuration.AutoWiredConfigruation;
+
+public class HardwareShop {
+   
+	@Autowired
+	@Qualifier
+	private int id;
+	@Autowired
+	@Qualifier("boss")
+	private String name;
+	@Autowired
+	private long gstNo;
+	@Autowired
+	private String ownerName;
+	@Autowired
+	private String address;
+
+	public HardwareShop() {
+		System.out.println("Created HardwareShop...");
+	}
+
+	@Override
+	public String toString() {
+		return "HardwareShop [id=" + id + ", name=" + name + ", gstNo=" + gstNo + ", ownerName=" + ownerName
+				+ ", address=" + address + "]";
+	}

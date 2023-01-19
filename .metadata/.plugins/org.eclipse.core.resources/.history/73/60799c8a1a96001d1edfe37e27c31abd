@@ -1,0 +1,14 @@
+package com.xworkz.components;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Airtel implements Provider{
+
+	@Override
+	public void connect() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

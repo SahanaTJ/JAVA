@@ -1,0 +1,12 @@
+package com.xworkz.app;
+
+public class DevTester {
+
+	public static void main(String[] args) {
+		
+		System.out.println("main method started");
+		Ginger ginger = null;
+		ginger.buildImmunity();
+		System.out.println("main method ended");
+	}
+}

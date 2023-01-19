@@ -1,0 +1,7 @@
+package com.xworkz.curd.service;
+
+public interface TerroristServic {
+  
+	boolean validateAndSave(TerroristDTO dto);
+	
+}

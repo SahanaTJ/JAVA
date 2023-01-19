@@ -1,0 +1,13 @@
+package com.xworkz.components;
+
+import java.security.PublicKey;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public interface PetrolBunk{
+
+	private PetrolBunk() {
+	System.out.println("Constructor is created");	
+	}
+}

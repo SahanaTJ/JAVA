@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringInterface/bin&apos; to &apos;classes&apos;" description="Rename resource &apos;bin&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="bin" name="classes" stamp="1673901090173" updateReferences="true"/>
+</session>

@@ -1,0 +1,11 @@
+package com.xworkz.components;
+
+public class Petrol  implements Fuel{
+
+	@Override
+	public void consume() {
+	
+		
+	}
+
+}

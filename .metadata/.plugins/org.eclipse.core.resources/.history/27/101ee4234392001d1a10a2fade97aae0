@@ -1,0 +1,15 @@
+package com.xworkz.autowired.boot;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class SoftwareEngineer {
+  
+  @Value("")
+  private String name;
+  @Value("sana")
+  private double salary;
+  @Value(20000)
+  private String companyName;
+  @Value("Hp")
+  private String experience;
+}

@@ -1,0 +1,39 @@
+package com.xworkz.autowired.boot;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class YourWish {
+  
+	@Autowired
+	@Qualifier("name")
+	private String name;
+	@Autowired
+	@Qualifier("edu")
+	private String edu;
+	@Autowired
+	@Qualifier("Color")
+	private String color;
+	@Autowired
+	@Qualifier("language")
+	private int language;
+	@Autowired
+	@Qualifier("from")
+	private double from;
+	@Autowired
+	@Qualifier("hobbies")
+	private String hobbies;
+	@Autowired
+	@Qualifier("skill")
+	private String skill;
+	@Autowired
+	@Qualifier("height")
+	private String height;
+	@Autowired
+	@Qulifier("")
+	private 
+	@Override
+	
+}

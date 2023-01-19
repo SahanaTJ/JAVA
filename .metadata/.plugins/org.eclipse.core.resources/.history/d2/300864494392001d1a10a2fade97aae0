@@ -1,0 +1,62 @@
+package com.xworkz.autowired.boot;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class Software {
+  
+	@Value("")
+	private String name;
+	@Value("Eclipse")
+	private String version;
+	@Value("1.8")
+	private String developer;
+	@Value("sana")
+	private String date;
+	@Value("25-01-2023")
+	private String free; 
+	
+	public Software() {
+		System.out.println("");
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public String getDeveloper() {
+		return developer;
+	}
+
+	public void setDeveloper(String developer) {
+		this.developer = developer;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public String getFree() {
+		return free;
+	}
+
+	public void setFree(String free) {
+		this.free = free;
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.xworkz.meven.boot;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.xworkz.meven.configuaration.SpringConfiguaration;
+import com.xworkz.meven.things.Application;
+import com.xworkz.meven.things.Cycle;
+
+public class CycleRunnner {
+	public static void main(String[] args) {
+
+		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringConfiguaration.class);
+		Cycle ref = applicationContext.getBean("Instagram",Cycle.class);
+		System.out.println(ref);
+		
+		Application application = applicationContext.getBean(Application.class);
+		System.out.println(application.getName());
+		
+		System.out.println(application.getOS());
+		
+	}
+}

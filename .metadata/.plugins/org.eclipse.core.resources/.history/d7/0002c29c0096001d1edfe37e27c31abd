@@ -1,0 +1,10 @@
+package com.xworkz.interfac.boot;
+
+public class IntTester {
+ 
+	public static void main(String[] args) {
+		
+		 int i = 90;
+		 int y = 0;
+	}
+}

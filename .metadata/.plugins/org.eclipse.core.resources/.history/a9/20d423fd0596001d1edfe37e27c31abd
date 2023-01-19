@@ -1,0 +1,18 @@
+package com.xworkz.app;
+
+public class DevTester {
+
+	public static void main(String[] args) {
+		
+		System.out.println("main method started");
+		Ginger ginger = null;
+		try {
+			ginger.buildImmunity();
+		}catch(NullPointerException npe) {+
+		System.out.println("main method ended");
+	}
+}
+}
+
+//try is keyword
+//

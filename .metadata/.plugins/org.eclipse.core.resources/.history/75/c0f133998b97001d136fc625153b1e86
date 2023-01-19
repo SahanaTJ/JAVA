@@ -1,0 +1,5 @@
+package com.xworkz.curd.dto;
+
+public class SoldierDTO {
+
+}

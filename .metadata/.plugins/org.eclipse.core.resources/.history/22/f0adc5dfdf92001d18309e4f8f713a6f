@@ -1,0 +1,5 @@
+package com.xworkz.autowired.boot;
+
+public class Ghost {
+
+}

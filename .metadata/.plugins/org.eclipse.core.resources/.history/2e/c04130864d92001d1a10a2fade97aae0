@@ -1,0 +1,45 @@
+package com.xworkz.components;
+
+import java.util.Arrays;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.xworkz.autowired.boot.Country;
+import com.xworkz.autowired.boot.HardwareShop;
+import com.xworkz.autowired.boot.Pencil;
+import com.xworkz.autowired.boot.Rubber;
+import com.xworkz.autowired.boot.Software;
+import com.xworkz.configuration.AutoWiredConfigruation;
+
+public class AutoWiredRunner {
+	public static void main(String[] args) {
+		ApplicationContext container = new AnnotationConfigApplicationContext(AutowiredCinfiguration.class);
+		System.out.println(Arrays.toString(container.getBeanDefinitionNames()));
+
+		HardwareShop shop = container.getBean(HardwareShop.class);
+		System.out.println(System.lineSeparator()+shop.toString());
+
+		
+		Software software = container.getBean(Software.class);
+		System.out.println(software.toString());
+
+		
+
+		SoftwareEnginner enginner = container.getBean(SoftwareEnginner.class);
+		System.out.println(enginner.toString());
+
+		
+		Pencil pencil = container.getBean(Pencil.class);
+		System.out.println(pencil.toString());
+
+		
+		Rubber rubber = container.getBean(Rubber.class);
+		System.out.println(rubber.toString());
+
+		
+		Country country = container.getBean(Country.class);
+		System.out.println(country.toString());
+
+	}
+}

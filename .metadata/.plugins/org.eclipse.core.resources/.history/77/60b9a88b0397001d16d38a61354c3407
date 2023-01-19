@@ -1,0 +1,23 @@
+package com.xworkz.curd.service;
+
+import com.xworkz.curd.dto.TerroristDTO;
+
+public class TerroristServiceimpl implements TerroristServic {
+  
+	@Override
+	public boolean validateAndSave(TerroristDTO dto) {
+		System.out.println("Validatation started...");
+		System.out.println("Dto passed : "+dto);
+		Set<ConstraintViolation<TerroristDTO>> violations =Validation.buildDefaultValidatorFactory().getValidator().validate(dto);
+
+		if(!violations.isEmpty()) {
+			System.err.println("Error is there : ");
+			violations.forEach(c->System.err.println(c.getMessage()));
+		}
+		if(dto.isAlive()) {
+			System.out.println("Most dangeros");
+		}
+		return false;
+	}
+
+}

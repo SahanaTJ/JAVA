@@ -1,0 +1,12 @@
+package com.xworkz.configuration;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class EnergyConfiguration {
+   
+	public EnergyConfiguration() {
+		System.out.println("Created EnerygyConfiguration");
+	}
+	
+}

@@ -1,0 +1,15 @@
+package com.xworkz.configuration;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
+@Configuration
+@ComponentScan("com.xwork")
+public class EnergyConfiguration {
+   
+	public EnergyConfiguration() {
+		System.out.println("Created EnerygyConfiguration");
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.xworkz.constant;
+
+public enum PencilType {
+	PEN_PENCIL, WOODEN_PENCIL;
+}

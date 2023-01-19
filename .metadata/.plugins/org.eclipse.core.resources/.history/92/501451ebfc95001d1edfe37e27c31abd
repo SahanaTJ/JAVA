@@ -1,0 +1,20 @@
+package com.xworkz.interfac.boot;
+
+public class Tester {
+  
+	public static void main(String[] args) {
+		System.out.println("Main is Started");
+		
+		
+		
+		String str = null;
+		System.out.println(str.charAt(1));
+		
+	}
+}
+
+
+
+//exception is abnormal event
+//it is event during the excuation of 
+// exception is class

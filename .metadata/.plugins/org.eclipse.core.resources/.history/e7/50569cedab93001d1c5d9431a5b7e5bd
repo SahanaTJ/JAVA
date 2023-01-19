@@ -1,0 +1,13 @@
+package com.xwork.movie.components;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Movie {
+  
+	private Director director;
+	
+	public void Movie() {
+		System.out.println("Director is Created Movie");
+	}
+}

@@ -1,0 +1,5 @@
+package com.xworkz.constant;
+
+public enum RubberType {
+	RECTACLE, ROUND, SPECIFIC_DESIGN;
+}

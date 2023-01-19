@@ -1,0 +1,24 @@
+package com.xworkz.app;
+
+public class DevTester {
+
+	public static <Ginger> void main(String[] args) {
+		
+		System.out.println("main method started");
+		Ginger ginger = null;
+		/*
+		 * try{
+		 * 
+		 * }catch(){
+		 * 
+		 * }
+		 * 	
+		 * 	 */
+		
+		System.out.println("main method ended");
+	}
+ }
+
+
+//try is keyword
+//

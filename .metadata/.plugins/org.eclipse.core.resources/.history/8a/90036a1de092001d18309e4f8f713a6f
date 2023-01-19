@@ -1,0 +1,77 @@
+package com.xworkz.autowired.boot;
+
+import java.time.LocalDate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Ghost {
+  
+	@Autowired
+	@Qualifier("Panipuri")
+	private String name;
+	@Autowired
+	@Qualifier("ghostDontNow")
+	private String gender;
+	@Autowired
+	@Qualifier("ghostFatherName")
+	private String ghostFatherName;
+	@Autowired
+	@Qualifier("ghostSisterName")
+	private String ghostMotherName;
+	@Autowired
+	@Qualifier("ghostSisterName")
+	private String ghostSisterName;
+	@Autowired
+	@Qualifier("ghostBrotherName")
+	private String ghostBrotherName;
+	@Autowired
+	@Qualifier("ghostWhitebalck")
+	private String color;
+	@Autowired
+	@Qualifier("ghostHeight")
+	private String height;
+	@Autowired
+	@Qualifier("ghostWeight")
+	private String weight;
+	@Autowired
+	@Qualifier("2023-25-12")
+	private LocalDate date;
+	@Autowired
+	@Qualifier("ghostLocation")
+	private String location;
+	@Autowired
+	@Qualifier("ghostNumber")
+	private double number;
+	@Autowired
+	@Qualifier("ghostaddress")
+	private String address;
+	@Autowired
+	@Qualifier("ghostFullWhiteColorEstaAnthee")
+	private String dress;
+	@Autowired
+	@Qualifier("ghostWhite")
+	private String dressColor;
+	@Autowired
+	@Qualifier("2023-1-24")
+	private LocalDate comingDate;
+	@Autowired
+	@Qualifier("ghostFavFood")
+	private String ghostFavFood;
+	@Autowired
+	@Qualifier("ghostMalige")
+	private String ghostFavFlower;
+	@Autowired
+	@Qualifier("ghostFruitjuice")
+	private String ghostFavjuice;
+	@Autowired
+	@Qualifier("ghostBanglore")
+	private String favpalce;
+	@Autowired
+	@Qualifier("ghostJuiceShop")
+	private String favShop;
+	
+	
+}

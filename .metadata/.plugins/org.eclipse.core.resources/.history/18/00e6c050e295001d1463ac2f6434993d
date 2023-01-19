@@ -1,0 +1,6 @@
+package com.xworkz.components;
+
+public interface Diesel implements Fuel {
+
+
+}

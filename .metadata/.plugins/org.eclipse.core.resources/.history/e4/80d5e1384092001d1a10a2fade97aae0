@@ -1,0 +1,52 @@
+package com.xworkz.autowired.boot;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class Software {
+  
+	@Value("")
+	private String name;
+	@Value("Eclipse")
+	private String version;
+	@Value("1.8")
+	private String companyName;
+	@Value("Hp")
+	private String experience;
+	
+	public Software() {
+		System.out.println("");
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
+	public String getExperience() {
+		return experience;
+	}
+
+	public void setExperience(String experience) {
+		this.experience = experience;
+	}
+	
+}

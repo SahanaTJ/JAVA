@@ -1,0 +1,35 @@
+package com.xworkz.configuration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("com.xworkz.components")
+public class GhostConfiguration {
+
+	@Bean
+	public String name() {
+		System.out.println("registering Name");
+		return "NewsPaper";
+	}
+	
+	@Bean
+	private int id() {
+	  System.out.println("registering Id");
+	  int ref = 10;
+		return ref;
+		
+	@Bean 
+	private String language() {
+		System.out.println("registering language");
+		return "Kannada";
+		
+       ///////////////////////////////////////////////////////
+		
+	@Bean
+	private String 
+		
+	}
+} 
+

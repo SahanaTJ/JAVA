@@ -1,0 +1,15 @@
+package com.xworkz.components;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Petrol  implements Fuel{
+
+	public void consume() {
+	System.out.println("");
+	}
+ 
+	public void Fuel() {
+		System.out.println("");
+	}
+}

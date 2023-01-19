@@ -1,0 +1,43 @@
+package com.xworkz.autowired.boot;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Sneak {
+ 
+	@Autowired
+	@Qualifier("sneakname")
+	private String name;
+	@Autowired
+	@Qualifier("8.6")
+	private double length;
+	@Autowired
+	@Qualifier("balck red white green")
+	private String color;
+	@Autowired
+	@Qualifier("sneaktype")
+	private String type;
+	@Autowired
+	@Qualifier("sneakPoisionous")
+	private String poisionous;
+	
+	
+	public Sneak(String name, String type, String poisionous) {
+		super();
+		this.name = name;
+		this.type = type;
+		this.poisionous = poisionous;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Sneak [name=" + name + ", length=" + length + ", color=" + color + ", type=" + type + ", poisionous="
+				+ poisionous + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
+	
+}
+	

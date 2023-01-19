@@ -1,0 +1,23 @@
+package com.xworkz.interfac.boot;
+
+public class Tester {
+  
+	public static void main(String[] args) {
+		System.out.println("Main is Started");
+		
+		System.out.println("Starting with actual execution....");
+		 int i = 90;
+		 int y = 0;
+		
+		//String str = null;
+		//System.out.println(str.charAt(1));
+		System.out.println("Main is Ended");
+	}
+}
+
+
+
+//exception is abnormal event triggered in the jvm
+//it is event  triggered during the execution 
+// exception is class
+//  
